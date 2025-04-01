@@ -555,7 +555,6 @@ body {
     }
 }
 
-
 /* === КОНТАКТЫ === */
 .contact {
     text-align: center;
@@ -567,12 +566,14 @@ body {
 .contact__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    border-top: 2px solid #000;
+    padding-top: 20px;
 }
 
-.contact .section-title{
+.contact .section-title {
     color: #00aaff;
     font-size: 26px;
     font-weight: bold;
@@ -580,13 +581,14 @@ body {
     margin-bottom: 25px;
 }
 
-
 .contact__details {
     text-align: left;
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
 }
 
 .contact__details p {
@@ -594,6 +596,8 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .contact__details img {
@@ -601,17 +605,24 @@ body {
     height: 20px;
 }
 
+.contact__details a {
+    flex-grow: 1;
+    text-align: right;
+}
+
 /* Карта */
 .contact__map {
     width: 48%;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .contact__map iframe {
     width: 100%;
     height: 350px;
     border-radius: 8px;
+    border: 2px solid #000;
 }
 
 /* === МОБИЛЬНАЯ ВЕРСИЯ === */
